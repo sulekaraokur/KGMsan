@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGM-SAN - Endüstriyel Çözümler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" id="nav-home" class="active">Anasayfa</a>
+            <a href="about.html" id="nav-about">Hakkımızda</a>
+            <div class="dropdown">
+                <button class="dropbtn"><span id="nav-products">Ürünler</span> <i
+                        class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="roller.html" id="nav-cat1">Konveyör Rulo</a>
+                    <a href="idler.html" id="nav-cat2">Konveyör İstasyon</a>
+                    <a href="pulley.html" id="nav-cat3">Konveyör Tambur</a>
+                </div>
+            </div>
+            <a href="contact.html" id="nav-contact">İletişim</a>
+        </nav>
+        <div class="lang-menu">
+            <button onclick="changeLanguage('tr')">TR</button>
+            <span>|</span>
+            <button onclick="changeLanguage('en')">EN</button>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">KGM-SAN</h1>
+            <p id="hero-desc">Endüstriyel çözümlerde güven ve kalitenin adresi.</p>
+            <a href="roller.html" class="btn-main">Ürünlerimizi İnceleyin</a>
+        </div>
+    </section>
+
+    <section id="urunler">
+        <div class="container">
+            <h2 id="products-title">Ürün Kategorilerimiz</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/conveyor-roller.jpg" alt="Conveyor Roller">
+                    <h3 id="cat1-title">Konveyör Rulo</h3>
+                    <p id="cat1-desc">Uluslararası standartlara uygun üst ve alt rulo çözümleri.</p>
+                    <a href="roller.html" class="btn-main btn-small" id="cat1-btn">Detaylar</a>
+                </div>
+                <div class="card">
+                    <img src="images/conveyor-idler.jpg" alt="Conveyor Idler">
+                    <h3 id="cat2-title">Konveyör İstasyon</h3>
+                    <p id="cat2-desc">Taşıyıcı, dönüş, merkezleme ve darbe istasyonları.</p>
+                    <a href="idler.html" class="btn-main btn-small" id="cat2-btn">Detaylar</a>
+                </div>
+                <div class="card">
+                    <img src="images/conveyor-pulley.jpg" alt="Conveyor Pulley">
+                    <h3 id="cat3-title">Konveyör Tambur</h3>
+                    <p id="cat3-desc">Tahrik, kuyruk, gergi ve saptırma tamburları.</p>
+                    <a href="pulley.html" class="btn-main btn-small" id="cat3-btn">Detaylar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+                </div>
+                <p id="footer-desc">Endüstriyel taşıma sistemlerinde güvenilir çözüm ortağınız.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 id="footer-quick-links">Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="index.html" id="footer-home">Anasayfa</a></li>
+                    <li><a href="about.html" id="footer-about">Hakkımızda</a></li>
+                    <li><a href="#" id="footer-products">Ürünler</a></li>
+                    <li><a href="contact.html" id="footer-contact">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 id="footer-prod-links">Ürünlerimiz</h4>
+                <ul>
+                    <li><a href="roller.html" id="footer-p1">Konveyör Rulo</a></li>
+                    <li><a href="idler.html" id="footer-p2">Konveyör İstasyon</a></li>
+                    <li><a href="pulley.html" id="footer-p3">Konveyör Tambur</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 id="footer-contact-title">İletişim</h4>
+                <p><i class="fas fa-map-marker-alt"></i> <span id="footer-address">Organize Sanayi Bölgesi, Denizli,
+                        Türkiye</span></p>
+                <p><i class="fas fa-envelope"></i> info@kgmsan.com</p>
+                <p><i class="fas fa-phone"></i> 05XX XXX XX XX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footer-copy">&copy; 2026 KGMsan. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
