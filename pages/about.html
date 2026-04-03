@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KGM-SAN - Ürünler</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KGM-SAN - Hakkımızda</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+            <a href="../index.html">
+                <img src="../assets/images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
             </a>
         </div>
         <nav>
-            <a href="index.html" id="nav-home">Anasayfa</a>
+            <a href="../index.html" id="nav-home">Anasayfa</a>
             <a href="about.html" id="nav-about">Hakkımızda</a>
             <div class="dropdown">
-                <button class="dropbtn"><span id="nav-products">Ürünler</span> <i class="fas fa-caret-down"></i></button>
+                <a href="products.html" class="dropbtn" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px;"><span id="nav-products">Ürünler</span> <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="roller.html" id="nav-cat1">Konveyör Rulo</a>
                     <a href="idler.html" id="nav-cat2">Konveyör İstasyon</a>
@@ -29,21 +29,27 @@
             <a href="contact.html" id="nav-contact">İletişim</a>
         </nav>
         <div class="lang-menu">
-            <button onclick="changeLanguage('tr')">TR</button>
+            <button onclick="changeLanguage('tr')"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR"> TR</button>
             <span>|</span>
-            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('en')"><img src="https://flagcdn.com/w20/gb.png" width="16" alt="EN"> EN</button>
         </div>
     </header>
 
-    <section id="pulley">
+    <section id="hakkimizda">
         <div class="container">
-            <h2 id="cat3-title">Konveyör Tambur</h2>
+            <h2 id="about-title">Hakkımızda</h2>
             <div class="about-wrapper">
                 <div class="about-text-container">
-                    <p id="cat3-desc" style="font-size: 18px; line-height: 1.8; color: #555;">Tahrik, kuyruk, gergi ve saptırma tamburları.</p>
+                    <p id="about-text">2021 yılında kurulan KGM-SAN, tekstil yedek parçaları ve makinaları üretimiyle sektöre adım atmıştır. Yenilikçi ve müşteri odaklı yaklaşımıyla kısa sürede tanınan firmamız, tekstil sektöründeki başarısını konveyör bant sistemleri üretimine de taşımıştır. Müşteri ihtiyaçlarına göre özelleştirilebilen bu sistemler, yüksek kalite standartlarında üretilmekte ve güvenilir bir kullanım sunmaktadır.</p>
+                    
+                    <h3 id="mission-title">Misyonumuz</h3>
+                    <p id="mission-text">Yenilikçi yaklaşımımızla müşterilerimizin ihtiyaçlarına özel, yüksek kalite standartlarında, enerji verimliliği sağlayan, dayanıklı ve güvenilir konveyör bant sistemleri ile makine parçaları üreterek sektöre değer katmak.</p>
+                    
+                    <h3 id="vision-title">Vizyonumuz</h3>
+                    <p id="vision-text">Global ölçekli enerji krizinde çözüm ortağı olmak amacıyla Ar-Ge ve Ür-Ge çalışmalarına odaklanmak ve hayata geçirilecek projelerle "Yeşil Enerji" dönüşümünün güçlü bir parçası olmak.</p>
                 </div>
                 <div class="about-image-container">
-                    <img src="images/conveyor-pulley.jpg" alt="Conveyor Pulley" class="about-photo" style="object-fit: cover;">
+                    <img src="../assets/images/hero-bg.jpeg" alt="KGMsan Şirket Fotoğrafı" class="about-photo">
                 </div>
             </div>
         </div>
@@ -53,7 +59,7 @@
         <div class="footer-container">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+                    <img src="../assets/images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
                 </div>
                 <p id="footer-desc">Endüstriyel taşıma sistemlerinde güvenilir çözüm ortağınız.</p>
                 <div class="social-links">
@@ -65,9 +71,9 @@
             <div class="footer-col">
                 <h4 id="footer-quick-links">Hızlı Linkler</h4>
                 <ul>
-                    <li><a href="index.html" id="footer-home">Anasayfa</a></li>
+                    <li><a href="../index.html" id="footer-home">Anasayfa</a></li>
                     <li><a href="about.html" id="footer-about">Hakkımızda</a></li>
-                    <li><a href="#" id="footer-products">Ürünler</a></li>
+                    <li><a href="products.html" id="footer-products">Ürünler</a></li>
                     <li><a href="contact.html" id="footer-contact">İletişim</a></li>
                 </ul>
             </div>
@@ -91,6 +97,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

@@ -5,44 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KGM-SAN - Endüstriyel Çözümler</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
-<body>
+<body class="home-page">
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+                <img src="assets/images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
             </a>
         </div>
         <nav>
             <a href="index.html" id="nav-home" class="active">Anasayfa</a>
-            <a href="about.html" id="nav-about">Hakkımızda</a>
+            <a href="pages/about.html" id="nav-about">Hakkımızda</a>
             <div class="dropdown">
-                <button class="dropbtn"><span id="nav-products">Ürünler</span> <i
-                        class="fas fa-caret-down"></i></button>
+                <a href="pages/products.html" class="dropbtn"
+                    style="text-decoration:none; display:inline-flex; align-items:center; gap:4px;"><span
+                        id="nav-products">Ürünler</span> <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="roller.html" id="nav-cat1">Konveyör Rulo</a>
-                    <a href="idler.html" id="nav-cat2">Konveyör İstasyon</a>
-                    <a href="pulley.html" id="nav-cat3">Konveyör Tambur</a>
+                    <a href="pages/roller.html" id="nav-cat1">Konveyör Rulo</a>
+                    <a href="pages/idler.html" id="nav-cat2">Konveyör İstasyon</a>
+                    <a href="pages/pulley.html" id="nav-cat3">Konveyör Tambur</a>
                 </div>
             </div>
-            <a href="contact.html" id="nav-contact">İletişim</a>
+            <a href="pages/contact.html" id="nav-contact">İletişim</a>
         </nav>
         <div class="lang-menu">
-            <button onclick="changeLanguage('tr')">TR</button>
+            <button onclick="changeLanguage('tr')"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR"> TR</button>
             <span>|</span>
-            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('en')"><img src="https://flagcdn.com/w20/gb.png" width="16" alt="EN"> EN</button>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1 id="hero-title">KGM-SAN</h1>
-            <p id="hero-desc">Endüstriyel çözümlerde güven ve kalitenin adresi.</p>
-            <a href="#urunler" class="btn-main">Ürünlerimizi İnceleyin</a>
+    <section id="hero" class="hero-slider">
+        <div class="slider-container">
+            <!-- Slide 1: Pres-San Animated Sequence -->
+            <div class="slide active"
+                style="background-image: linear-gradient(rgba(11, 61, 96, 0.7), rgba(0, 0, 0, 0.6)), url('assets/images/hero-bg.jpg');">
+                <div class="hero-content pres-style">
+                    <div class="dynamic-words">
+                        <span id="hero1-w1">Güvenilir</span>
+                        <span id="hero1-w2">Teknolojik</span>
+                        <span id="hero1-w3">Kaliteli</span>
+                    </div>
+                    <h1 id="hero1-title" class="main-title">KGM-SAN</h1>
+                    <div class="hero-buttons">
+                        <a href="pages/products.html" class="btn-main" id="hero1-btn1">Ürünlerimiz</a>
+                        <a href="pages/about.html" class="btn-outline" id="hero1-btn2">Hakkımızda</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(11, 61, 96, 0.8), rgba(0, 0, 0, 0.7)), url('assets/images/conveyor-idler.jpg');">
+                <div class="hero-content">
+                    <h1 id="hero-title2">Yeşil Enerji Odaklı Üretim</h1>
+                    <p id="hero-desc2">Geleceğin teknolojileriyle doğaya duyarlı, yüksek verimli sistemler tasarlıyoruz.
+                    </p>
+                    <a href="pages/about.html" class="btn-main" id="hero-btn2">Vizyonumuzu Keşfedin</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide"
+                style="background-image: linear-gradient(rgba(11, 61, 96, 0.8), rgba(0, 0, 0, 0.7)), url('assets/images/conveyor-pulley.jpg');">
+                <div class="hero-content">
+                    <h1 id="hero-title3">Projeye Özel Mühendislik</h1>
+                    <p id="hero-desc3">İhtiyaçlarınıza tam uyumlu, dayanıklı ve yenilikçi AR-GE çözümleri.</p>
+                    <a href="pages/contact.html" class="btn-main" id="hero-btn3">İletişime Geçin</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="slider-btn next" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- Dots -->
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
         </div>
     </section>
 
@@ -51,22 +96,22 @@
             <h2 id="products-title">Ürün Kategorilerimiz</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="images/conveyor-roller.jpg" alt="Conveyor Roller">
+                    <img src="assets/images/conveyor-roller.jpg" alt="Conveyor Roller">
                     <h3 id="cat1-title">Konveyör Rulo</h3>
                     <p id="cat1-desc">Uluslararası standartlara uygun üst ve alt rulo çözümleri.</p>
-                    <a href="roller.html" class="btn-main btn-small" id="cat1-btn">Detaylar</a>
+                    <a href="pages/roller.html" class="btn-main btn-small" id="cat1-btn">Detaylar</a>
                 </div>
                 <div class="card">
-                    <img src="images/conveyor-idler.jpg" alt="Conveyor Idler">
+                    <img src="assets/images/conveyor-idler.jpg" alt="Conveyor Idler">
                     <h3 id="cat2-title">Konveyör İstasyon</h3>
                     <p id="cat2-desc">Taşıyıcı, dönüş, merkezleme ve darbe istasyonları.</p>
-                    <a href="idler.html" class="btn-main btn-small" id="cat2-btn">Detaylar</a>
+                    <a href="pages/idler.html" class="btn-main btn-small" id="cat2-btn">Detaylar</a>
                 </div>
                 <div class="card">
-                    <img src="images/conveyor-pulley.jpg" alt="Conveyor Pulley">
+                    <img src="assets/images/conveyor-pulley.jpg" alt="Conveyor Pulley">
                     <h3 id="cat3-title">Konveyör Tambur</h3>
                     <p id="cat3-desc">Tahrik, kuyruk, gergi ve saptırma tamburları.</p>
-                    <a href="pulley.html" class="btn-main btn-small" id="cat3-btn">Detaylar</a>
+                    <a href="pages/pulley.html" class="btn-main btn-small" id="cat3-btn">Detaylar</a>
                 </div>
             </div>
         </div>
@@ -76,7 +121,7 @@
         <div class="footer-container">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+                    <img src="assets/images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
                 </div>
                 <p id="footer-desc">Endüstriyel taşıma sistemlerinde güvenilir çözüm ortağınız.</p>
                 <div class="social-links">
@@ -89,17 +134,17 @@
                 <h4 id="footer-quick-links">Hızlı Linkler</h4>
                 <ul>
                     <li><a href="index.html" id="footer-home">Anasayfa</a></li>
-                    <li><a href="about.html" id="footer-about">Hakkımızda</a></li>
-                    <li><a href="#" id="footer-products">Ürünler</a></li>
-                    <li><a href="contact.html" id="footer-contact">İletişim</a></li>
+                    <li><a href="pages/about.html" id="footer-about">Hakkımızda</a></li>
+                    <li><a href="pages/products.html" id="footer-products">Ürünler</a></li>
+                    <li><a href="pages/contact.html" id="footer-contact">İletişim</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4 id="footer-prod-links">Ürünlerimiz</h4>
                 <ul>
-                    <li><a href="roller.html" id="footer-p1">Konveyör Rulo</a></li>
-                    <li><a href="idler.html" id="footer-p2">Konveyör İstasyon</a></li>
-                    <li><a href="pulley.html" id="footer-p3">Konveyör Tambur</a></li>
+                    <li><a href="pages/roller.html" id="footer-p1">Konveyör Rulo</a></li>
+                    <li><a href="pages/idler.html" id="footer-p2">Konveyör İstasyon</a></li>
+                    <li><a href="pages/pulley.html" id="footer-p3">Konveyör Tambur</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -115,7 +160,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

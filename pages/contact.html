@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KGM-SAN - Ürünler</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KGM-SAN - İletişim</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+            <a href="../index.html">
+                <img src="../assets/images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
             </a>
         </div>
         <nav>
-            <a href="index.html" id="nav-home">Anasayfa</a>
+            <a href="../index.html" id="nav-home">Anasayfa</a>
             <a href="about.html" id="nav-about">Hakkımızda</a>
             <div class="dropdown">
-                <button class="dropbtn"><span id="nav-products">Ürünler</span> <i class="fas fa-caret-down"></i></button>
+                <a href="products.html" class="dropbtn" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px;"><span id="nav-products">Ürünler</span> <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="roller.html" id="nav-cat1">Konveyör Rulo</a>
                     <a href="idler.html" id="nav-cat2">Konveyör İstasyon</a>
@@ -29,22 +29,20 @@
             <a href="contact.html" id="nav-contact">İletişim</a>
         </nav>
         <div class="lang-menu">
-            <button onclick="changeLanguage('tr')">TR</button>
+            <button onclick="changeLanguage('tr')"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR"> TR</button>
             <span>|</span>
-            <button onclick="changeLanguage('en')">EN</button>
+            <button onclick="changeLanguage('en')"><img src="https://flagcdn.com/w20/gb.png" width="16" alt="EN"> EN</button>
         </div>
     </header>
 
-    <section id="roller">
+    <section id="iletisim" style="display: block;">
         <div class="container">
-            <h2 id="cat1-title">Konveyör Rulo</h2>
-            <div class="about-wrapper">
-                <div class="about-text-container">
-                    <p id="cat1-desc" style="font-size: 18px; line-height: 1.8; color: #555;">Uluslararası standartlara uygun üst ve alt rulo çözümleri.</p>
-                </div>
-                <div class="about-image-container">
-                    <img src="images/conveyor-roller.jpg" alt="Conveyor Roller" class="about-photo" style="object-fit: cover;">
-                </div>
+            <h2 id="contact-title">İletişim</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-user"></i> <strong id="contact-founder1">Kurucu Ortak:</strong> İsim Soyisim 1 - 05XX XXX XX XX</p>
+                <p><i class="fas fa-user"></i> <strong id="contact-founder2">Kurucu Ortak:</strong> İsim Soyisim 2 - 05XX XXX XX XX</p>
+                <p><i class="fas fa-envelope"></i> <strong id="contact-email">E-posta:</strong> info@kgmsan.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong id="contact-address">Adres:</strong> Organize Sanayi Bölgesi, Denizli, Türkiye</p>
             </div>
         </div>
     </section>
@@ -53,7 +51,7 @@
         <div class="footer-container">
             <div class="footer-col">
                 <div class="footer-logo">
-                    <img src="images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
+                    <img src="../assets/images/kgmsan.png" alt="KGMsan Logo">KGM-SAN
                 </div>
                 <p id="footer-desc">Endüstriyel taşıma sistemlerinde güvenilir çözüm ortağınız.</p>
                 <div class="social-links">
@@ -65,9 +63,9 @@
             <div class="footer-col">
                 <h4 id="footer-quick-links">Hızlı Linkler</h4>
                 <ul>
-                    <li><a href="index.html" id="footer-home">Anasayfa</a></li>
+                    <li><a href="../index.html" id="footer-home">Anasayfa</a></li>
                     <li><a href="about.html" id="footer-about">Hakkımızda</a></li>
-                    <li><a href="#" id="footer-products">Ürünler</a></li>
+                    <li><a href="products.html" id="footer-products">Ürünler</a></li>
                     <li><a href="contact.html" id="footer-contact">İletişim</a></li>
                 </ul>
             </div>
@@ -91,6 +89,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
