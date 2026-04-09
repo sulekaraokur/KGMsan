@@ -29,6 +29,9 @@ const translations = {
         "contact-founder1": "Kurucu Ortak:",
         "contact-founder2": "Kurucu Ortak:",
         "contact-email": "E-posta:",
+        "contact-email2": "E-posta:",
+        "contact-phone1": "Telefon:",
+        "contact-phone2": "Telefon:",
         "contact-address": "Adres:",
         "footer-text": "© 2026 KGMSAN. Tüm hakları saklıdır."
     },
@@ -62,6 +65,9 @@ const translations = {
         "contact-founder1": "Co-Founder:",
         "contact-founder2": "Co-Founder:",
         "contact-email": "Email:",
+        "contact-email2": "Email:",
+        "contact-phone1": "Phone:",
+        "contact-phone2": "Phone:",
         "contact-address": "Address:",
         "footer-text": "© 2026 KGMSAN. All rights reserved."
     }
@@ -79,8 +85,8 @@ function changeLanguage(lang) {
                 if (strongTag) {
                     const textNode = Array.from(element.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0);
                     strongTag.innerHTML = translations[lang][key];
-                    if (lang === 'en' && key === 'contact-address' && textNode) textNode.textContent = " Organized Industrial Zone, Denizli, Turkey";
-                    if (lang === 'tr' && key === 'contact-address' && textNode) textNode.textContent = " Organize Sanayi Bölgesi, Denizli, Türkiye";
+                    if (lang === 'en' && key === 'contact-address' && textNode) textNode.textContent = " Yavuz Selim Mah. Küçük Sanayi Sitesi 7.cad. NO:65 Dulkadiroğlu/Kahramanmaraş/Turkey";
+                    if (lang === 'tr' && key === 'contact-address' && textNode) textNode.textContent = " Yavuz Selim Mah. Küçük Sanayi Sitesi 7.cad. NO:65 Dulkadiroğlu/Kahramanmaraş/Türkiye";
                     if (lang === 'en' && key.includes('founder') && textNode) textNode.textContent = textNode.textContent.replace('İsim Soyisim', 'Name Surname');
                     if (lang === 'tr' && key.includes('founder') && textNode) textNode.textContent = textNode.textContent.replace('Name Surname', 'İsim Soyisim');
                 }
@@ -103,7 +109,7 @@ Object.assign(translations.tr, {
     "footer-p2": "Konveyör İstasyon",
     "footer-p3": "Konveyör Tambur",
     "footer-contact-title": "İletişim",
-    "footer-address": "Organize Sanayi Bölgesi, Denizli, Türkiye",
+    "footer-address": "Yavuz Selim Mah. Küçük Sanayi Sitesi 7.cad. NO:65 Dulkadiroğlu/Kahramanmaraş/Türkiye",
     "footer-copy": "© 2026 KGMSAN. Tüm hakları saklıdır."
 });
 
@@ -119,7 +125,7 @@ Object.assign(translations.en, {
     "footer-p2": "Conveyor Idler",
     "footer-p3": "Conveyor Pulley",
     "footer-contact-title": "Contact",
-    "footer-address": "Organized Industrial Zone, Denizli, Turkey",
+    "footer-address": "Yavuz Selim Mah. Küçük Sanayi Sitesi 7.cad. NO:65 Dulkadiroğlu/Kahramanmaraş/Turkey",
     "footer-copy": "© 2026 KGMSAN. All rights reserved."
 });
 Object.assign(translations.tr, {
