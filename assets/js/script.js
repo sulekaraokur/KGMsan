@@ -7,10 +7,10 @@ const translations = {
         "nav-cat2": "Konveyör İstasyon",
         "nav-cat3": "Konveyör Tambur",
         "nav-contact": "İletişim",
-        "hero-title": "KGM-SAN",
+        "hero-title": "KGMSAN",
         "hero-desc": "Endüstriyel çözümlerde güven ve kalitenin adresi.",
         "about-title": "Hakkımızda",
-        "about-text": "2021 yılında kurulan KGM-SAN, tekstil yedek parçaları ve makinaları üretimiyle sektöre adım atmıştır. Yenilikçi ve müşteri odaklı yaklaşımıyla kısa sürede tanınan firmamız, tekstil sektöründeki başarısını konveyör bant sistemleri üretimine de taşımıştır. Müşteri ihtiyaçlarına göre özelleştirilebilen bu sistemler, yüksek kalite standartlarında üretilmekte ve güvenilir bir kullanım sunmaktadır.",
+        "about-text": "2021 yılında kurulan KGMSAN, tekstil yedek parçaları ve makinaları üretimiyle sektöre adım atmıştır. Yenilikçi ve müşteri odaklı yaklaşımıyla kısa sürede tanınan firmamız, tekstil sektöründeki başarısını konveyör bant sistemleri üretimine de taşımıştır. Müşteri ihtiyaçlarına göre özelleştirilebilen bu sistemler, yüksek kalite standartlarında üretilmekte ve güvenilir bir kullanım sunmaktadır.",
         "mission-title": "Misyonumuz",
         "mission-text": "Yenilikçi yaklaşımımızla müşterilerimizin ihtiyaçlarına özel, yüksek kalite standartlarında, enerji verimliliği sağlayan, dayanıklı ve güvenilir konveyör bant sistemleri ile makine parçaları üreterek sektöre değer katmak.",
         "vision-title": "Vizyonumuz",
@@ -30,7 +30,7 @@ const translations = {
         "contact-founder2": "Kurucu Ortak:",
         "contact-email": "E-posta:",
         "contact-address": "Adres:",
-        "footer-text": "© 2026 KGMsan. Tüm hakları saklıdır."
+        "footer-text": "© 2026 KGMSAN. Tüm hakları saklıdır."
     },
     "en": {
         "nav-home": "Home",
@@ -40,10 +40,10 @@ const translations = {
         "nav-cat2": "Conveyor Idler",
         "nav-cat3": "Conveyor Pulley",
         "nav-contact": "Contact",
-        "hero-title": "KGM-SAN",
+        "hero-title": "KGMSAN",
         "hero-desc": "The address of trust and quality in industrial solutions.",
         "about-title": "About Us",
-        "about-text": "Founded in 2021, KGM-SAN stepped into the sector by producing textile spare parts and machinery. Recognized in a short time with its innovative and customer-oriented approach, our company has carried its success in the textile sector to the production of conveyor belt systems. These customized systems are produced with high quality standards and offer reliable use.",
+        "about-text": "Founded in 2021, KGMSAN stepped into the sector by producing textile spare parts and machinery. Recognized in a short time with its innovative and customer-oriented approach, our company has carried its success in the textile sector to the production of conveyor belt systems. These customized systems are produced with high quality standards and offer reliable use.",
         "mission-title": "Our Mission",
         "mission-text": "To add value to the sector by producing durable and reliable conveyor belt systems and machine parts that are customized to our customers' needs, with high quality standards and energy efficiency, through our innovative approach.",
         "vision-title": "Our Vision",
@@ -63,7 +63,7 @@ const translations = {
         "contact-founder2": "Co-Founder:",
         "contact-email": "Email:",
         "contact-address": "Address:",
-        "footer-text": "© 2026 KGMsan. All rights reserved."
+        "footer-text": "© 2026 KGMSAN. All rights reserved."
     }
 };
 
@@ -77,12 +77,12 @@ function changeLanguage(lang) {
             } else if (element.innerHTML.includes('<strong>')) {
                 const strongTag = element.querySelector('strong');
                 if (strongTag) {
-                   const textNode = Array.from(element.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0);
-                   strongTag.innerHTML = translations[lang][key];
-                   if(lang === 'en' && key === 'contact-address' && textNode) textNode.textContent = " Organized Industrial Zone, Denizli, Turkey";
-                   if(lang === 'tr' && key === 'contact-address' && textNode) textNode.textContent = " Organize Sanayi Bölgesi, Denizli, Türkiye";
-                   if(lang === 'en' && key.includes('founder') && textNode) textNode.textContent = textNode.textContent.replace('İsim Soyisim', 'Name Surname');
-                   if(lang === 'tr' && key.includes('founder') && textNode) textNode.textContent = textNode.textContent.replace('Name Surname', 'İsim Soyisim');
+                    const textNode = Array.from(element.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0);
+                    strongTag.innerHTML = translations[lang][key];
+                    if (lang === 'en' && key === 'contact-address' && textNode) textNode.textContent = " Organized Industrial Zone, Denizli, Turkey";
+                    if (lang === 'tr' && key === 'contact-address' && textNode) textNode.textContent = " Organize Sanayi Bölgesi, Denizli, Türkiye";
+                    if (lang === 'en' && key.includes('founder') && textNode) textNode.textContent = textNode.textContent.replace('İsim Soyisim', 'Name Surname');
+                    if (lang === 'tr' && key.includes('founder') && textNode) textNode.textContent = textNode.textContent.replace('Name Surname', 'İsim Soyisim');
                 }
             } else {
                 element.innerHTML = translations[lang][key];
@@ -104,7 +104,7 @@ Object.assign(translations.tr, {
     "footer-p3": "Konveyör Tambur",
     "footer-contact-title": "İletişim",
     "footer-address": "Organize Sanayi Bölgesi, Denizli, Türkiye",
-    "footer-copy": "© 2026 KGMsan. Tüm hakları saklıdır."
+    "footer-copy": "© 2026 KGMSAN. Tüm hakları saklıdır."
 });
 
 Object.assign(translations.en, {
@@ -120,7 +120,7 @@ Object.assign(translations.en, {
     "footer-p3": "Conveyor Pulley",
     "footer-contact-title": "Contact",
     "footer-address": "Organized Industrial Zone, Denizli, Turkey",
-    "footer-copy": "© 2026 KGMsan. All rights reserved."
+    "footer-copy": "© 2026 KGMSAN. All rights reserved."
 });
 Object.assign(translations.tr, {
     "page-title": "Konveyör Ruloları",
@@ -128,9 +128,6 @@ Object.assign(translations.tr, {
     "roller-p1-title": "Çelik Konveyör Rulo",
     "roller-p1-desc": "Taşıyıcı ve dönüş tarafında yük desteği sağlayan temel konveyör bileşeni. Özel ölçü ve uluslararası standartlarda üretim.",
     "roller-p1-btn": "Teklif Al",
-    "roller-p2-title": "HDPE Rulo",
-    "roller-p2-desc": "Aşırı hava koşulları ve korozyona dayanıklı Polietilen rulolar. Geleneksel çelik rulolara göre daha hafif ve çok daha uzun ömürlüdür.",
-    "roller-p2-btn": "Teklif Al",
     "roller-p3-title": "Kauçuk Darbe Rulosu",
     "roller-p3-desc": "Yükleme ve transfer noktalarında, serbest düşen malzemelerin banta vereceği zararı sönümleyen darbe emici kauçuk kaplı rulolar.",
     "roller-p3-btn": "Teklif Al",
@@ -143,27 +140,15 @@ Object.assign(translations.tr, {
     "roller-p6-title": "Çelik Spiral Dönüş Rulosu",
     "roller-p6-desc": "Kendi kendini temizleyen özel konstrüksiyonu sayesinde yaş ve yapışkan dökme malzemelerin bant altına birikmesini engeller.",
     "roller-p6-btn": "Teklif Al",
-    "roller-p7-title": "Standart Çelik Rulo",
-    "roller-p7-desc": "Uluslararası standartlarda dizayn edilmiş konveyör bileşenleridir. Taşıyıcı ve dönüş tarafı için özel üretim imkanı.",
-    "roller-p7-btn": "Teklif Al",
     "roller-p8-title": "Sabit Açılı Kenar Rulosu",
     "roller-p8-desc": "Mobil kırıcı ve elek makinalarının standartlarına tam uyumlu olarak üretilen, bant aşınmasını kontrol altına alan sabit açılı rulolar.",
     "roller-p8-btn": "Teklif Al",
-    "roller-p9-title": "Kauçuk Kaplı Rulo",
-    "roller-p9-desc": "Aşınan yüzeyin ömrünü uzatmak veya bant ile rulo arasındaki sürtünmeyi olumlu yönde artırmak amacıyla uygulanan vulkanize kaplamalı rulolar.",
-    "roller-p9-btn": "Teklif Al",
     "roller-p10-title": "Çırpıcı Dönüş Rulosu",
     "roller-p10-desc": "Banta yapışma eğilimi gösteren zorlu malzemelerin birikmesini engellemek için özel olarak geliştirilmiş operasyon verimi sağlayan rulolar.",
     "roller-p10-btn": "Teklif Al",
     "roller-p11-title": "Kılavuz Rulosu",
     "roller-p11-desc": "Konveyör bandının hizasını kesintisiz korumak için tasarlanmıştır. Bant hasarlarını engelleyerek taşıma sisteminizin toplam ömrünü artırır.",
     "roller-p11-btn": "Teklif Al",
-    "roller-p12-title": "Tahrikli (Yastık Rulmanlı) Rulo",
-    "roller-p12-desc": "Ağır hizmet tipi yüksek gerilimli hatlarda ve besleyici uygulamalarda çalışmak üzere dıştan rulmanlı olarak tasarlanmış dayanıklı modeldir.",
-    "roller-p12-btn": "Teklif Al",
-    "roller-p13-title": "Boru Tipi Konveyör Rulosu",
-    "roller-p13-desc": "Kapalı boru tipli taşıma sistemlerinde, malzemenin dökülme olmadan güvenle transfer edilmesini sağlamak üzere optimize edilmiş boru biçimi rulolar.",
-    "roller-p13-btn": "Teklif Al"
 });
 
 Object.assign(translations.en, {
@@ -172,9 +157,6 @@ Object.assign(translations.en, {
     "roller-p1-title": "Steel Conveyor Roller",
     "roller-p1-desc": "Essential conveyor component providing load support on carry and return sides. Custom sizing and production according to international standards.",
     "roller-p1-btn": "Get a Quote",
-    "roller-p2-title": "HDPE Roller",
-    "roller-p2-desc": "Extreme weather and corrosion-resistant Polyethylene rollers. Lighter and significantly longer-lasting than traditional steel rollers.",
-    "roller-p2-btn": "Get a Quote",
     "roller-p3-title": "Rubber Impact Roller",
     "roller-p3-desc": "Impact-absorbing rubber-coated rollers that cushion the damage caused by free-falling materials on the belt at loading and transfer points.",
     "roller-p3-btn": "Get a Quote",
@@ -187,27 +169,15 @@ Object.assign(translations.en, {
     "roller-p6-title": "Steel Spiral Return Roller",
     "roller-p6-desc": "Self-cleaning special construction prevents wet and sticky bulk materials from accumulating under the belt.",
     "roller-p6-btn": "Get a Quote",
-    "roller-p7-title": "Standard Steel Rollers",
-    "roller-p7-desc": "Conveyor components designed to international standards. Custom production available for carrying and return sides.",
-    "roller-p7-btn": "Get a Quote",
     "roller-p8-title": "Fixed Angle Wing Rollers",
     "roller-p8-desc": "Fixed angle rollers fully compatible with mobile crusher and screen machine standards, effectively controlling belt wear.",
     "roller-p8-btn": "Get a Quote",
-    "roller-p9-title": "Rubber Lagging Roller",
-    "roller-p9-desc": "Vulcanized coated rollers applied to extend wear surface life or positively increase friction between the belt and the roller.",
-    "roller-p9-btn": "Get a Quote",
     "roller-p10-title": "Beater Return Roller",
     "roller-p10-desc": "Specially developed rollers to prevent buildup of tough, sticky materials on the belt, providing higher operational efficiency.",
     "roller-p10-btn": "Get a Quote",
     "roller-p11-title": "Guide Rollers",
     "roller-p11-desc": "Designed to continuously maintain conveyor belt alignment. Prevents belt damage and increases the overall life of your conveying system.",
     "roller-p11-btn": "Get a Quote",
-    "roller-p12-title": "Live Shaft Idler Roller",
-    "roller-p12-desc": "Durable model designed with external bearings for operation in heavy-duty high-tension lines and feeder applications.",
-    "roller-p12-btn": "Get a Quote",
-    "roller-p13-title": "Pipe Conveyor Roller",
-    "roller-p13-desc": "Pipe-shaped rollers optimized for enclosed pipe conveying systems to ensure safe and spill-free material transfer.",
-    "roller-p13-btn": "Get a Quote"
 });
 
 Object.assign(translations.tr, {
@@ -237,8 +207,8 @@ Object.assign(translations.tr, {
     "idler-p8-title": "Merkezleme İstasyonu",
     "idler-p8-desc": "Bant eksenindeki kaymaları otomatik olarak düzelterek taşıma işleminin kesintisiz olarak sürekli merkez konumda kalmasını sağlayan taşıyıcı istasyonlardır.",
     "idler-p8-btn": "Teklif Al",
-    "idler-p9-title": "Merkezleme Dönüş İstasyonu",
-    "idler-p9-desc": "Sistemin alt/dönüş bandındaki sapmaları tespit edip otomatik olarak merkez pozisyonuna getiren hayati hizalama istasyonlarıdır.",
+    "idler-p9-title": "Konveyör Bant Sistemleri",
+    "idler-p9-desc": "Sistemlerin iskeleti olan dayanıklı şase yapısı ve yüksek performanslı bantlarıyla konveyör sistemleri; malzeme taşıma süreçlerinde hız, güvenlik ve süreklilik sağlar. Uzun ömürlü yapısı ve düşük işletme maliyetiyle verimliliği artıran stratejik bir çözümdür.",
     "idler-p9-btn": "Teklif Al"
 });
 
@@ -269,8 +239,8 @@ Object.assign(translations.en, {
     "idler-p8-title": "Self-Aligning Idler",
     "idler-p8-desc": "Self-acting tracking set used for correcting belt tracking issues and constantly maintaining the belt in a central position.",
     "idler-p8-btn": "Get a Quote",
-    "idler-p9-title": "Self-Aligning Return Idler",
-    "idler-p9-desc": "Crucial alignment return sets used for correcting belt tracking errors precisely on the return side.",
+    "idler-p9-title": "Conveyor Belt Systems",
+    "idler-p9-desc": "Conveyor systems with their durable chassis structure and high-performance belts provide speed, safety, and continuity in material handling processes. It is a strategic solution that increases efficiency with its long-lasting structure and low operating costs.",
     "idler-p9-btn": "Get a Quote"
 });
 
@@ -314,10 +284,11 @@ Object.assign(translations.tr, {
     "prod-cat3-title": "Konveyör Tambur",
     "prod-cat3-desc": "Sistemdeki gücü aktarmak veya bandı gerip yönlendirmek için kullanılan ana bileşenler.",
     "prod-cat3-btn": "Ürünleri İncele",
-    "hero1-w1": "Güvenilir",
-    "hero1-w2": "Teknolojik",
-    "hero1-w3": "Kaliteli",
-    "hero1-title": "KGM-SAN",
+    "hero1-w1": "Kalite",
+    "hero1-w2": "Güven",
+    "hero1-w3": "Makine",
+    "hero1-w4": "Sanayi",
+    "hero1-title": "KGMSAN",
     "hero1-btn1": "Ürünlerimiz",
     "hero1-btn2": "Hakkımızda",
     "hero-title2": "Yeşil Enerji Odaklı Üretim",
@@ -343,10 +314,11 @@ Object.assign(translations.en, {
     "prod-cat3-title": "Conveyor Pulley",
     "prod-cat3-desc": "The main parts used for transmitting power in the system or tensioning and redirecting the belt.",
     "prod-cat3-btn": "View Products",
-    "hero1-w1": "Reliable",
-    "hero1-w2": "Technological",
-    "hero1-w3": "High Quality",
-    "hero1-title": "KGM-SAN",
+    "hero1-w1": "Quality",
+    "hero1-w2": "Trust",
+    "hero1-w3": "Machinery",
+    "hero1-w4": "Industry",
+    "hero1-title": "KGMSAN",
     "hero1-btn1": "Our Products",
     "hero1-btn2": "About Us",
     "hero-title2": "Green Energy Focused Production",
@@ -367,15 +339,15 @@ let slideTimer;
 function showSlides(n) {
     let slides = document.querySelectorAll('.slide');
     let dots = document.querySelectorAll('.dot');
-    
-    if(slides.length === 0) return;
-    
+
+    if (slides.length === 0) return;
+
     if (n >= slides.length) { slideIndex = 0; }
     if (n < 0) { slideIndex = slides.length - 1; }
-    
+
     slides.forEach(slide => slide.classList.remove('active'));
     dots.forEach(dot => dot.classList.remove('active'));
-    
+
     slides[slideIndex].classList.add('active');
     dots[slideIndex].classList.add('active');
 }
@@ -396,7 +368,7 @@ function currentSlide(n) {
 
 function startSlider() {
     let slides = document.querySelectorAll('.slide');
-    if(slides.length > 0) {
+    if (slides.length > 0) {
         slideTimer = setInterval(() => {
             slideIndex++;
             showSlides(slideIndex);
